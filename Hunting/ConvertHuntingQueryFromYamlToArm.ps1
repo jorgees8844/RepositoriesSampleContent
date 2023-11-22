@@ -1,7 +1,7 @@
 $jsonConversionDepth = 50
 function ConvertHuntingQueryFromYamlToArm {
     param (
-        # Parameter help description. something here to test
+        # Parameter help description. something here to test another something to test 
         [Parameter(Mandatory)][string] $inputFilePath,
         [Parameter(Mandatory)][string] $outputFilePath
     )
