@@ -216,7 +216,7 @@ function ConnectAzCloud {
     Clear-AzContext -Scope Process;
     Clear-AzContext -Scope CurrentUser -Force -ErrorAction SilentlyContinue;
     
-    if ($CloudEnv -ne 'AzureChinaCloud') 
+    if ($CloudEnv -ne 'AzureChinaCloud' -and $CloudEnv -ne 'AzureUSGovernment') 
     {
         Write-Output "Attempting Adding new cloud";
 
